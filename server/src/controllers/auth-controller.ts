@@ -153,6 +153,7 @@ const login = async (req: Request, res: Response): Promise<any> => {
 
     const tokenPayload = {
       userId: user._id,
+      role: user.role,
     };
 
     const authToken = await generateAuthenticationToken(tokenPayload);

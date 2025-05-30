@@ -38,16 +38,16 @@ const sendForgotPasswordOtpEmail = ({
           <h2 style="color: #d35400; text-align: center;">🔐 Password Reset OTP</h2>
           <p style="font-size: 16px; color: #555;">Hello,</p>
           <p style="font-size: 16px; color: #555;">
-            We received a request to reset the password for your <strong>Social Media App</strong> account. Use the OTP below to proceed:
+            We received a request to reset the password for your <strong>Sociofy</strong> account. Use the OTP below to proceed:
           </p>
-          <div style="text-align: center; margin: 30px 0;">
-            <span style="display: inline-block; padding: 16px 30px; font-size: 26px; color: #fff; background-color: #007bff; border-radius: 6px; font-weight: bold; letter-spacing: 4px;">
+         <div style="text-align: center; margin: 40px 0;">
+            <span style="display: inline-block; padding: 15px 28px; font-size: 26px; color: #fff; background-color: #6e5eff; border-radius: 8px; letter-spacing: 5px; font-weight: bold;">
               ${otp}
             </span>
           </div>
           <p style="font-size: 15px; color: #888;">⚠️ This OTP will expire in 15 minutes. If you didn’t request a reset, please ignore this message.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;" />
-          <p style="font-size: 16px; color: #333;">Best regards,<br><strong>The Social Media App Team</strong></p>
+          <p style="font-size: 16px; color: #333;">Best regards,<br><strong>The Sociofy Team</strong></p>
         </div>
       </div>
     `,
@@ -87,19 +87,19 @@ const sendAccountVerificationOtpEmail = ({
       html: `
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f2f6fc; padding: 30px;">
         <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 40px;">
-          <h1 style="color: #2c3e50; text-align: center;">🎉 Welcome to Social Media App!</h1>
+          <h1 style="color: #2c3e50; text-align: center;">🎉 Welcome to Sociofy!</h1>
           <p style="font-size: 16px; color: #555;">Hello,</p>
           <p style="font-size: 16px; color: #555;">
-            Thank you for registering as a user on <strong>Social Media App</strong>! To complete your registration, please enter the following OTP to verify your email:
+            Thank you for registering as a user on <strong>Sociofy</strong>! To complete your registration, please enter the following OTP to verify your email:
           </p>
           <div style="text-align: center; margin: 40px 0;">
-            <span style="display: inline-block; padding: 18px 35px; font-size: 28px; color: #fff; background-color: #28a745; border-radius: 8px; letter-spacing: 5px; font-weight: bold;">
+            <span style="display: inline-block; padding: 15px 28px; font-size: 26px; color: #fff; background-color: #6e5eff; border-radius: 8px; letter-spacing: 5px; font-weight: bold;">
               ${otp}
             </span>
           </div>
-          <p style="font-size: 15px; color: #888;">⚠️ This OTP is valid for 5 minutes. If you did not request this, you can safely ignore the email.</p>
+          <p style="font-size: 15px; color: #888;">⚠️ This OTP is valid for 2 minutes. If you did not request this, you can safely ignore the email.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eaeaea;" />
-          <p style="font-size: 16px; color: #333;">Kind regards,<br><strong>The Social Media App Team</strong></p>
+          <p style="font-size: 16px; color: #333;">Kind regards,<br><strong>The Sociofy Team</strong></p>
         </div>
       </div>
     `,
