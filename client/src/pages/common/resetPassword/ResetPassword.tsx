@@ -23,15 +23,21 @@ const ResetPassword = () => {
     resetPasswordMutation.mutate(data);
   };
   return (
-    <div className="h-screen w-screen bg-gradient-to-r from-white via-white to-gradient1 flex">
-      {/* Wrapper to control 50-50 layout inside the full-width gradient */}
-      <div className="w-1/2 flex justify-center items-center gap-2">
-        <img src={appIcon} alt="App-Icon" className="h-[90px] w-[90px]" />
-        <h1 className="text-6xl font-bold text-primary">Sociofy</h1>
-      </div>{" "}
-      {/* Empty left half */}
-      <div className="w-1/2 flex flex-col items-center justify-center">
-        <div className="flex flex-col gap-y-2 bg-white p-4 w-[400px] rounded-md shadow-primary shadow-2xl">
+    <div className="min-h-screen w-screen bg-gradient-to-b lg:bg-gradient-to-r from-white via-white to-gradient1 flex flex-col lg:flex-row">
+      {/* Left half / Top Half (logo) */}
+      <div className="w-full lg:w-1/2 flex justify-center items-center gap-2 py-32 lg:py-0">
+        <img
+          src={appIcon}
+          alt="App-Icon"
+          className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px]"
+        />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
+          Sociofy
+        </h1>
+      </div>
+      {/* Empty Right half / Bottom Half */}
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center px-4">
+        <div className="flex flex-col gap-y-2 bg-white p-4 w-full max-w-[400px] rounded-md shadow-primary shadow-2xl">
           <h3 className={`heading flex justify-center text-primary`}>
             Reset Password
           </h3>
